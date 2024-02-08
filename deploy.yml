@@ -1,6 +1,7 @@
 ---
 - name: Pull Docker Image from Docker Hub
-  hosts: all
+  hosts: localhost
+  connection: local
   remote_user: manasi
   become: false
   tasks:
