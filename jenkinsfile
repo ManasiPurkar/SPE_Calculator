@@ -53,13 +53,13 @@ pipeline {
             emailext subject: 'Build Successful',
                       body: 'The build was successful. Yay!',
                       to: 'manasipurkar2001@gmail.com',
-                      recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+                      
         }
         failure {
             emailext subject: 'Build Failed',
                       body: 'The build failed. Please check the build logs for details.',
                       to: 'manasipurkar2001@gmail.com',
-                      recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+                      
         }
     }
 
